@@ -1,3 +1,3 @@
-export minifyCss from './minifyCss';
-export hexToRgb from './hexToRgb';
-export resizeImage from './resizeImage';
+export { default as minifyCss } from './minifyCss';
+export { default as hexToRgb } from './hexToRgb';
+export { default as resizeImage } from './resizeImage';
