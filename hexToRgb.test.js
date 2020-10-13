@@ -1,6 +1,6 @@
-import hexToRgb from './hexToRgb';
+import hexToRGB from './hexToRgb';
 
-describe( 'Utils: hexToRGB', () => {
+describe( 'hexToRGB', () => {
 	it ( 'converts a hexadecimal color expressions to its RGB counterpart', () => {
 		expect( hexToRGB( '#ffffff' ).join() ).toEqual( '255,255,255' );
 		expect( hexToRGB( '#fff' ).join() ).toEqual( '255,255,255' );
