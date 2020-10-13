@@ -7,6 +7,13 @@
  * @return {Array}
  */
 export default function arrayFromRange( min, max, increment = 1 ) {
+	const arr = new Array( Math.ceil( ( max - min ) / increment ) )
+		.fill()
+		.map( ( _, i ) => min + ( i * increment ) );
 
-	return [];
+	if ( arr.slice( -1 ) !== max ) {
+		arr.push( max );
+	}
+
+	return arr;
 }
