@@ -4,7 +4,9 @@
   "description": "A collection of reusable JavaScript utilities for Quartz products.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "npm run test:eslint && npm run test:unit",
+    "test:eslint": "eslint --ext .js",
+    "test:unit": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   },
   "homepage": "https://github.com/Quartz/js-utils#readme",
   "devDependencies": {
+    "@quartz/eslint-config-react": "^1.1.3",
     "jest": "^26.5.3"
   }
 }
