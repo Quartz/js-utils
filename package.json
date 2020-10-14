@@ -1,7 +1,7 @@
 {
-  "name": "js-utils",
+  "name": "@quartz/js-utils",
   "version": "1.0.0",
-  "description": "",
+  "description": "A collection of reusable JavaScript utilities for Quartz products.",
   "main": "index.js",
   "scripts": {
     "test": "jest"
