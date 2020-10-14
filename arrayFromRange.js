@@ -9,7 +9,7 @@
 function arrayFromRange( min, max, increment = 1 ) {
 	const arr = new Array( Math.ceil( ( max - min ) / increment ) )
 		.fill()
-		.map( ( _, i ) => min + ( i * increment ) );
+		.map( ( _, i ) => i * increment + min );
 
 	if ( arr.slice( -1 ) !== max ) {
 		arr.push( max );

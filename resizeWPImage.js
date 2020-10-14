@@ -26,6 +26,6 @@ function resizeWPImage ( url, width, height, crop = false, quality = 75 ) {
 	}
 
 	return resizedUrl;
-};
+}
 
 module.exports = resizeWPImage;
