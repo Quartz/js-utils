@@ -1,6 +1,5 @@
 {
 	"extends": [
 		"@quartz/eslint-config-base"
-	],
-	"parser": "babel-eslint"
+	]
 }
