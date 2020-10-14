@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -12,8 +12,14 @@
   },
   "author": "Quartz",
   "license": "ISC",
+  "files": [
+    "src/**/*.js"
+  ],
   "bugs": {
     "url": "https://github.com/Quartz/js-utils/issues"
   },
-  "homepage": "https://github.com/Quartz/js-utils#readme"
+  "homepage": "https://github.com/Quartz/js-utils#readme",
+  "devDependencies": {
+    "jest": "^26.5.3"
+  }
 }

@@ -1,3 +1,4 @@
-export { default as minifyCss } from './minifyCss';
-export { default as hexToRgb } from './hexToRgb';
-export { default as resizeImage } from './resizeImage';
+module.exports.arrayFromRange = require( './arrayFromRange' );
+module.exports.minifyCss = require( './minifyCss' );
+module.exports.hexToRGB = require( './hexToRgb' );
+module.exports.resizeImage = require( './resizeImage' );

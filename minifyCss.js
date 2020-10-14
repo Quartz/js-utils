@@ -5,6 +5,8 @@
  * @param  {String} css CSS to minify.
  * @return {String}
  */
-export default function minifyCss ( css ) {
+function minifyCss ( css ) {
 	return css.replace( /\s*([{}\(\);:,])\s*/g, '$1' );
 }
+
+module.exports = minifyCss;
