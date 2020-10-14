@@ -8,7 +8,7 @@
  * @param  {int}    quality
  * @return {string}
  */
-export default function resizeImage ( url, width, height, crop = false, quality = 75 ) {
+function resizeImage ( url, width, height, crop = false, quality = 75 ) {
 	const { origin, pathname } = new URL( url );
 
 	let resizedUrl = `${origin}${pathname}?quality=${quality}&strip=all`;
@@ -27,3 +27,5 @@ export default function resizeImage ( url, width, height, crop = false, quality 
 
 	return resizedUrl;
 };
+
+module.exports = resizeImage;

@@ -1,4 +1,4 @@
-const arrayFromRange = require( './arrayFromRange' );
+const { arrayFromRange } = require( '.' );
 
 describe( 'arrayFromRange', () => {
 	it ( 'returns an array', () => {
