@@ -13,7 +13,7 @@
   "author": "Quartz",
   "license": "ISC",
   "files": [
-    "src/**/*.js"
+    "**/*.js"
   ],
   "bugs": {
     "url": "https://github.com/Quartz/js-utils/issues"
