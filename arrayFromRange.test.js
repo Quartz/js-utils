@@ -1,4 +1,4 @@
-import arrayFromRange from './arrayFromRange';
+const arrayFromRange = require( './arrayFromRange' );
 
 describe( 'arrayFromRange', () => {
 	it ( 'returns an array', () => {
