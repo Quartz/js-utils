@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run test:eslint && npm run test:unit",
-    "test:eslint": "eslint --ext .js",
+    "test:eslint": "eslint --ignore-path .gitignore .",
     "test:unit": "jest"
   },
   "repository": {
