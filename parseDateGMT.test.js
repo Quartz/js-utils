@@ -16,7 +16,7 @@ describe( 'Dates: parseDateGMT', () => {
 		dates.forEach( date => expect( parseDateGMT( date ).toGMTString() ).toEqual( 'Mon, 01 Jan 2018 12:00:00 GMT' ) );
 	} );
 
-	it( 'handles null inputs', () => {
+	it( 'handles falsey inputs', () => {
 		const dates = [
 			'',
 			null,

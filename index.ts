@@ -3,5 +3,5 @@ module.exports.hexToRGB = require( './hexToRgb' );
 module.exports.minifyCss = require( './minifyCss' );
 module.exports.parseDateGMT = require( './parseDateGMT' );
 module.exports.resizeWPImage = require( './resizeWPImage' );
-module.exports.styledTimestamp = require( './styledTimestamp' );
+module.exports.stylizedTimestamp = require( './stylizedTimestamp' );
 module.exports.timeAgo = require( './timeAgo' );

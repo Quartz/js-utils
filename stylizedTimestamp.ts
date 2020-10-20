@@ -16,7 +16,7 @@ const monthAbbreviations = [
 	'Dec.',
 ];
 
-module.exports = function styledTimestamp ( dateGMT: Date | string, shortMonths = false ) {
+module.exports = function stylizedTimestamp ( dateGMT: Date | string, shortMonths = false ) {
 	const publishDate = parseDateGMT( dateGMT );
 	const day = publishDate.getDate();
 	const year = publishDate.getFullYear();
