@@ -1,4 +1,4 @@
-const { resizeWPImage } = require( '.' );
+const resizeWPImage = require( './resizeWPImage' );
 
 describe( 'resizeWPImage', () => {
 	const url = 'https://www.example.com/test.jpg';

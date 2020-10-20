@@ -6,7 +6,7 @@
  * @param  {int} 		increment Amount by which to increase each array value
  * @return {Array}
  */
-function arrayFromRange( min, max, increment = 1 ) {
+module.exports = function arrayFromRange( min, max, increment = 1 ) {
 	const arr = new Array( Math.ceil( ( max - min ) / increment ) )
 		.fill()
 		.map( ( _, i ) => i * increment + min );
@@ -16,6 +16,4 @@ function arrayFromRange( min, max, increment = 1 ) {
 	}
 
 	return arr;
-}
-
-module.exports = arrayFromRange;
+};

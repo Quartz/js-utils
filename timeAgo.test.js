@@ -1,10 +1,10 @@
-const { timeAgo } = require( '.' );
+const timeAgo = require( './timeAgo' );
+
+const oneMinuteInMs = 60 * 1000;
+const oneHourInMs = 60 * oneMinuteInMs;
 
 describe( 'timeAgo', () => {
-	const oneMinuteInMs = 60 * 1000;
-	const oneHourInMs = 60 * oneMinuteInMs;
-
-	it ( 'Describes the number of minutes passed if the timestamp is less than one hour old', () => {
+	it ( 'describes the number of minutes passed if the timestamp is less than one hour old', () => {
 		expect( timeAgo( new Date( Date.now() - oneMinuteInMs * 0.1 ) ) ).toEqual( '0 minutes ago' );
 		expect( timeAgo( new Date( Date.now() - oneMinuteInMs * 0.6 ) ) ).toEqual( '1 minute ago' );
 		expect( timeAgo( new Date( Date.now() - oneMinuteInMs * 1 ) ) ).toEqual( '1 minute ago' );
@@ -14,7 +14,7 @@ describe( 'timeAgo', () => {
 		expect( timeAgo( new Date( Date.now() - oneMinuteInMs * 59 ) ) ).toEqual( '59 minutes ago' );
 	} );
 
-	it ( 'Describes the number of hours passed if the timestamp is more than one hour old', () => {
+	it ( 'describes the number of hours passed if the timestamp is more than one hour old', () => {
 		expect( timeAgo( new Date( Date.now() - oneHourInMs ) ) ).toEqual( '1 hour ago' );
 		expect( timeAgo( new Date( Date.now() - oneHourInMs * 1.4 ) ) ).toEqual( '1 hour ago' );
 		expect( timeAgo( new Date( Date.now() - oneHourInMs * 2 ) ) ).toEqual( '2 hours ago' );
