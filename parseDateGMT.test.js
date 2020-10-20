@@ -1,6 +1,6 @@
 const parseDateGMT = require( './parseDateGMT' );
 
-describe( 'Dates: parseDateGMT', () => {
+describe( 'parseDateGMT', () => {
 	it( 'can parse lots of date formats correctly', () => {
 		const dates = [
 			'2018-01-01 12:00:00.000Z',

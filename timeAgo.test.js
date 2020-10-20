@@ -12,6 +12,7 @@ describe( 'timeAgo', () => {
 		expect( timeAgo( new Date( Date.now() - oneMinuteInMs * 30 ) ) ).toEqual( '30 minutes ago' );
 		expect( timeAgo( new Date( Date.now() - oneMinuteInMs * 45 ) ) ).toEqual( '45 minutes ago' );
 		expect( timeAgo( new Date( Date.now() - oneMinuteInMs * 59 ) ) ).toEqual( '59 minutes ago' );
+		expect( timeAgo( new Date( Date.now() - oneMinuteInMs * 60 ) ) ).not.toEqual( '60 minutes ago' );
 	} );
 
 	it ( 'describes the number of hours passed if the timestamp is more than one hour old', () => {
