@@ -8,7 +8,7 @@
  * @param  {int}    quality
  * @return {string}
  */
-module.exports = function resizeWPImage ( url, width, height, crop = false, quality = 75 ) {
+module.exports = function resizeWPImage ( url: string, width: number, height: number, crop = false, quality = 75 ) {
 	const { origin, pathname } = new URL( url );
 
 	let resizedUrl = `${origin}${pathname}?quality=${quality}&strip=all`;

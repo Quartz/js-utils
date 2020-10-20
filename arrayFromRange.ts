@@ -6,12 +6,12 @@
  * @param  {int} 		increment Amount by which to increase each array value
  * @return {Array}
  */
-module.exports = function arrayFromRange( min, max, increment = 1 ) {
+module.exports = function arrayFromRange( min: number, max: number, increment = 1 ) {
 	const arr = new Array( Math.ceil( ( max - min ) / increment ) )
-		.fill()
+		.fill( null )
 		.map( ( _, i ) => i * increment + min );
 
-	if ( arr.slice( -1 ) !== max ) {
+	if ( arr.slice( -1 )[ 0 ] !== max ) {
 		arr.push( max );
 	}
 

@@ -16,13 +16,13 @@ const monthAbbreviations = [
 	'Dec.',
 ];
 
-module.exports = function styledTimestamp ( dateGMT?: Date | string, shortMonth?: boolean ) {
+module.exports = function styledTimestamp ( dateGMT: Date | string, shortMonths = false ) {
 	const publishDate = parseDateGMT( dateGMT );
 	const day = publishDate.getDate();
 	const year = publishDate.getFullYear();
 	let month = publishDate.toLocaleString( 'default', { month: 'long' } );
 
-	if ( shortMonth ) {
+	if ( shortMonths ) {
 		month = monthAbbreviations[ publishDate.getMonth() ];
 	}
 
