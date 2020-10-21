@@ -1,6 +1,6 @@
 # Quartz JavaScript utilities
 
-[![npm version](https://badge.fury.io/js/%40quartz%2Fjs-utils.svg)](https://badge.fury.io/js/%40quartz%2Fjs-utils)
+[![npm version](https://badge.fury.io/js/%40quartz%2Fjs-utils.svg)](https://www.npmjs.com/package/@quartz/js-utils)
 
 A collection of reusable JavaScript utilities for Quartz products, with optional TypeScript support.
 
