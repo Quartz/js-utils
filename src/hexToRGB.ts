@@ -4,7 +4,7 @@
  * @param  {String} hexColor 3- or 6-character hex color.
  * @return {Array}
  */
-function hexToRGB( hexColor ) {
+export default function hexToRGB( hexColor: string ) {
 	// Remove # from arg.
 	let hex = hexColor.slice( 1 );
 
@@ -20,5 +20,3 @@ function hexToRGB( hexColor ) {
 
 	return [ R, G, B ];
 }
-
-module.exports = hexToRGB;
