@@ -1,4 +1,4 @@
-module.exports = function parseDateGMT( date?: Date | string ) {
+export default function parseDateGMT( date?: Date | string ) {
 	// Catch falsey args
 	if ( !date ) {
 		return new Date();
@@ -26,4 +26,4 @@ module.exports = function parseDateGMT( date?: Date | string ) {
 	}
 
 	return new Date();
-};
+}

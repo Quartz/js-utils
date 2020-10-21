@@ -1,4 +1,4 @@
-const parseDateGMT = require( './parseDateGMT' );
+const { parseDateGMT } = require( '.' );
 
 describe( 'parseDateGMT', () => {
 	it( 'can parse lots of date formats correctly', () => {

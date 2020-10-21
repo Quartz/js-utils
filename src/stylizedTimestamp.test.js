@@ -1,4 +1,4 @@
-const stylizedTimestamp = require( './stylizedTimestamp' );
+const { stylizedTimestamp } = require( '.' );
 
 const oneMinuteInMs = 60 * 1000;
 const oneHourInMs = 60 * oneMinuteInMs;

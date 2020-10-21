@@ -1,5 +1,4 @@
-const parseDateGMT = require( './parseDateGMT' );
-const timeAgo = require( './timeAgo' );
+import { parseDateGMT, timeAgo } from '.';
 
 const monthAbbreviations = [
 	'Jan.',
@@ -16,7 +15,7 @@ const monthAbbreviations = [
 	'Dec.',
 ];
 
-module.exports = function stylizedTimestamp ( dateGMT: Date | string, shortMonths = false ) {
+export default function stylizedTimestamp ( dateGMT: Date | string, shortMonths = false ) {
 	const publishDate = parseDateGMT( dateGMT );
 	const day = publishDate.getDate();
 	const year = publishDate.getFullYear();
@@ -39,4 +38,4 @@ module.exports = function stylizedTimestamp ( dateGMT: Date | string, shortMonth
 	}
 
 	return `${month} ${day}, ${year}`;
-};
+}

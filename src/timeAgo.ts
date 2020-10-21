@@ -5,7 +5,7 @@
  * @param  {Date} timetamp Date object representing the timestamp
  * @return {String}
  */
-module.exports = function timeAgo ( timestamp: Date ) {
+export default function timeAgo ( timestamp: Date ) {
 	const time = timestamp.getTime();
 	const now = new Date().getTime();
 	const diff = now - time;
@@ -32,4 +32,4 @@ module.exports = function timeAgo ( timestamp: Date ) {
 	}
 
 	return `${minutesAgo} minutes ago`;
-};
+}

@@ -1,4 +1,4 @@
-const timeAgo = require( './timeAgo' );
+const { timeAgo } = require( '.' );
 
 const oneMinuteInMs = 60 * 1000;
 const oneHourInMs = 60 * oneMinuteInMs;
