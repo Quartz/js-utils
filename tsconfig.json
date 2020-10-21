@@ -1,6 +1,7 @@
 {
 	"compilerOptions": {
-		"module": "commonjs",
+		"declaration": true,
+		"module": "es6",
 		"allowSyntheticDefaultImports": true,
 		"strictNullChecks": true,
 		"target": "es2017",
@@ -11,6 +12,6 @@
 		"baseUrl": "."
 	},
 	"include": [
-		"src/**/*.ts"
+		"src/index.ts"
 	]
 }

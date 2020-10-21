@@ -1,4 +1,4 @@
-const hexToRGB = require( './hexToRGB' );
+const { hexToRGB } = require( '.' );
 
 describe( 'hexToRGB', () => {
 	it ( 'converts a hexadecimal color expressions to its RGB counterpart', () => {

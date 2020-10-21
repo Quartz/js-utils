@@ -1,4 +1,4 @@
-module.exports.arrayFromRange = require( './arrayFromRange' );
-module.exports.hexToRGB = require( './hexToRGB' );
-module.exports.minifyCss = require( './minifyCss' );
-module.exports.resizeWPImage = require( './resizeWPImage' );
+export { default as arrayFromRange } from './arrayFromRange';
+export { default as hexToRGB } from './hexToRGB';
+export { default as minifyCss } from './minifyCss';
+export { default as resizeWPImage } from './resizeWPImage';
