@@ -12,7 +12,7 @@
     "test:eslint": "eslint --ignore-path .gitignore src",
     "test:unit": "jest",
     "build": "tsc",
-    "prepublish": "npm run build"
+    "publish": "npm run build"
   },
   "repository": {
     "type": "git",
