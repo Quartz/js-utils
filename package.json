@@ -2,7 +2,7 @@
   "name": "@quartz/js-utils",
   "version": "1.0.0",
   "description": "A collection of reusable JavaScript utilities for Quartz products.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "npm run test:eslint && npm run test:unit",
     "test:eslint": "eslint --ignore-path .gitignore .",
@@ -16,9 +16,6 @@
   },
   "author": "Quartz",
   "license": "ISC",
-  "files": [
-    "dist/*"
-  ],
   "bugs": {
     "url": "https://github.com/Quartz/js-utils/issues"
   },
