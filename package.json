@@ -11,7 +11,8 @@
     "test": "npm run test:eslint && npm run test:unit",
     "test:eslint": "eslint --ignore-path .gitignore src",
     "test:unit": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
