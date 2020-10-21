@@ -1,10 +1,5 @@
 {
 	"extends": [
 		"@quartz/eslint-config-base"
-	],
-	"overrides": [
-		{
-			"files": [ "*.js", "*.ts" ],
-		}
 	]
 }
