@@ -29,7 +29,7 @@ Export one function per file with a test suite (`.test.js`).
 - Export any new functions to `src/index.ts`
 - Add a test suite for any new functions
 - Ensure tests pass (`npm t`)
-- Increment the package.json version using `npm version`
+- Increment the `package.json` version using `npm version`
 
 ## Deploying
 
