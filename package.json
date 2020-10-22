@@ -1,6 +1,6 @@
 {
   "name": "@quartz/js-utils",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A collection of reusable JavaScript utilities for Quartz products.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,7 +12,7 @@
     "test:eslint": "eslint --ignore-path .gitignore src",
     "test:unit": "jest",
     "build": "tsc",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
