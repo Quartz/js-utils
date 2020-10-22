@@ -1,6 +1,6 @@
 {
   "name": "@quartz/js-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A collection of reusable JavaScript utilities for Quartz products.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
