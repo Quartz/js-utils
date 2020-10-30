@@ -1,10 +1,7 @@
 /**
  * Convert a hex color like #336699 to an array of RGB values.
- *
- * @param  {String} hexColor 3- or 6-character hex color.
- * @return {Array}
  */
-export default function hexToRGB( hexColor: string ) {
+export default function hexToRGB( hexColor: string ): [number, number, number] {
 	// Remove # from arg.
 	let hex = hexColor.slice( 1 );
 
