@@ -6,5 +6,5 @@
  * @return {String}
  */
 export default function minifyCss ( css: string ) {
-	return css.replace( /\s*([{}\(\);:,])\s*/g, '$1' );
+	return css.replace( /\s*([{}\(\);:,])\s*/g, '$1' ).trim();
 }
