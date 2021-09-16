@@ -8,22 +8,26 @@
  * @param  {int}    quality
  * @return {string}
  */
-export default function resizeWPImage ( url: string, width?: number, height?: number, crop = false, quality = 75 ) {
-	const { origin, pathname } = new URL( url );
+export default function resizeWPImage ( url?: string, width?: number, height?: number, crop = false, quality = 75 ) {
+	if (!url) {
+		return '';
+	} else {
+		const { origin, pathname } = new URL( url );
 
-	let resizedUrl = `${origin}${pathname}?quality=${quality}&strip=all`;
-
-	if ( width ) {
-		resizedUrl += `&w=${width}`;
+		let resizedUrl = `${origin}${pathname}?quality=${quality}&strip=all`;
+	
+		if ( width ) {
+			resizedUrl += `&w=${width}`;
+		}
+	
+		if ( height ) {
+			resizedUrl += `&h=${height}`;
+		}
+	
+		if ( crop ) {
+			resizedUrl += '&crop=1';
+		}
+	
+		return resizedUrl;
 	}
-
-	if ( height ) {
-		resizedUrl += `&h=${height}`;
-	}
-
-	if ( crop ) {
-		resizedUrl += '&crop=1';
-	}
-
-	return resizedUrl;
 }
